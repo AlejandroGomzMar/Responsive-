@@ -185,7 +185,7 @@ h1 {
 
 
  /*contacto*/
- .etiquetas {
+  .etiquetas {
     display: flex;
     justify-content: center;
     font-size: 4vw;
