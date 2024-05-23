@@ -67,7 +67,7 @@ h1 {
     margin: 10px 0;
 }
 #definicion, #definition {
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 10px;
     color: rgb(211, 38, 182);
 }
@@ -96,41 +96,57 @@ h1 {
 
 /*Menu*/
     /* tarjetas..*/
-    .contenedor{
+    .container {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
     }
-    .tarjet{
-        position:relative;
-        width: 100px;
-        height: 380px;
-        margin: auto; 
+    .def1, .def2 {
+        text-align: center;
     }
-    .tarjet img{
-        width:30px ;
-        margin: 5px;
+    /*fin index*/
+    
+    /*Menu*/
+    /* tarjetas */
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
     }
-    .tarjet .face{
-        position: absolute;
+    .tarjet {
+        position: relative;
         width: 300px;
+        height: 300px;
+        margin: 20px;
+        perspective: 600px;
+    }
+    .tarjet img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+    .tarjet .face {
+        position: absolute;
+        width: 100%;
         height: 100%;
         backface-visibility: hidden;
         border-radius: 15px;
-        margin: 15px;
         overflow: hidden;
-        transition: .5s;
+        transition: transform 0.5s;
     }
-    .tarjet .front{
-        transform: perspective(600px) rotateY(0deg);
+    .tarjet .front {
+        transform: rotateY(0deg);
         box-shadow: 0 5px 10px #b50808;
-        transform: translate(-15px);
     }
-    .tarjet .front .img{
-        position: absolute;
+    .tarjet .front .img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .tarjet .front h3{
+    .tarjet .front h3 {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -141,45 +157,41 @@ h1 {
         text-align: center;
         font-weight: 600;
     }
-    .tarjet .back{
-        transform: perspective(600px) rotateY(180deg);
-        background: rgb(19, 20, 20);
+    .tarjet .back {
+        transform: rotateY(180deg);
+        background: black;
         padding: 15px;
-        color: #f3f3f3;
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        box-shadow: 0 5px 10px #000;
+        box-shadow: 0 5px 10px black;
     }
-    .tarjet .back .link{
+    .tarjet .back .link {
         border-top: solid 1px #f3f3f3;
         height: 50px;
         line-height: 50px;
     }
-    .tarjet .back a{
+    .tarjet .back a {
         color: #f0e9e9;
     }
-    .tarjet .back h3{
-        font-size: 30px;
+    .tarjet .back h3 {
+        font-size: 20px;
         margin-top: 20px;
         letter-spacing: 2px;
     }
-    .tarjet .back p{
-       /* letter-spacing: 1px;*/
-        font-size: medium;
-        font-style: italic;
+    .tarjet .back p {
+        font-size: 14px;
         letter-spacing: 1px;
-        margin-left: 10%;
-        margin-right: 10%;
-    } 
-    .tarjet:hover .front{
-        transform: perspective(600px) rotateY(180deg);
-        margin-top: 100px;
     }
-    .tarjet:hover .back{
-        transform: perspective(600px) rotateY(360deg);
+    .tarjet:hover .front {
+        transform: rotateY(180deg);
     }
+    .tarjet:hover .back {
+        transform: rotateY(360deg);
+    }
+    /*fin menu*/
 /*fin menu*/
 
 
@@ -273,7 +285,7 @@ h1 {
 
 
 
-    @media (min-widdth:768px){
+    @media (min-width:768px){
     }
 
 
