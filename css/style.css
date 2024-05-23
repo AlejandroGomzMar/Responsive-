@@ -9,108 +9,87 @@ body {
     margin:  0;
     padding: 0;
     text-decoration: none;
-    box-sizing: borde-box;
+    box-sizing: border-box;
      }
 
 /*index*/
 
-     /*imagen*/
-     #seriefav {
-        width: 150px;
-        height: 150px;
-        margin: 15px;
-        border-radius: 50%;
-        box-shadow: 5px 5px 6px rgba(200, 79, 49, 0.973);
-    }
-    #nombre1 {
-        position: absolute;
-        top: 80px;
-        left: 170px;
-        margin-left: 30px;
-        font-size: 30px;
-        color:#bf9b46;
-        font-family: "Dancing Script", cursive;
-    }
+    /*imagen*/
+#seriefav {
+    width: 15vw;
+    height: auto;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 6px rgba(200, 79, 49, 0.973);
+}
 
-    /**/
-    header{
-        width: 200%;
-        height: 200px;
-        /* background: palevioletred;*/
-        background-image: url(../imagenes/fondo\ paginas.jpg);
-    }
-    .etiquetas{ 
-        position: absolute;
-        top: 50px;
-        left: 70%;
-        font-size: 30px;
-        color: rgb(227, 46, 18);
-        padding: 1px;
-    }
-        .niveles {
-            display: inline;
-            color:#45b40d;
-            font-family: "Dancing Script", cursive;
-        }
-    
-    /*contenido*/
-    h1 {
-        font-family: "Dancing Script", cursive;
-        text-align: center;  
-        font-size: 100px;
-        color: #431805;
-    }
-    #definicion {
-    font-size: 25px;
+#nombre1 {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 5vw;
+    color: #bf9b46;
+    font-family: "Dancing Script", cursive;
+}
+
+/**/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-image: url(../imagenes/fondo\ paginas.jpg);
+    padding: 10px;
+}
+.etiquetas {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    color: rgb(227, 46, 18);
+    padding: 1px;
+    list-style: none;
+    margin: 0;
+}
+.niveles {
+    margin: 0 1vw;
+    color: #45b40d;
+    font-family: "Dancing Script", cursive;
+}
+.niveles a {
+    text-decoration: none;
+    color: inherit;
+}
+/*contenido*/
+h1 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 8vw;
+    color: #431805;
+    margin: 10px 0;
+}
+#definicion, #definition {
+    font-size: 4vw;
     margin: 10px;
     color: rgb(211, 38, 182);
-    margin-right: 20px;
-    }
-    #ham1 {
-        position: relative;
-        width: 320px;
-        height: 250px;
-        flex-direction: row;
-        margin-right: 15px;
-        border-radius: 10px;
-        float:right;
-        bottom: 100%;
-        margin-top: 100px;
-        padding: 2%;
-    }
-    #ham1:hover{
-        box-shadow: 10px 10px 12px #03045e; 
-    }
-    #definition {
-        font-size: 25px;
-        margin: 10px;
-        color: rgb(221, 12, 197);
-        margin-right: 20px;  
-        }
-    #ham2 {
-        position: relative;
-        width: 320px;
-        height: 250px;
-        flex-direction: row;
-        margin-right: 15px;
-        border-radius: 10px;
-        float:right;
-        bottom: 100%;
-        margin-top: 100px;
-        padding: 2%;
-    }
-    #ham2:hover{
-        box-shadow: 10px 10px 12px #03045e;  
-    }
-    .container{
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        margin: 0;
-    }
-    .def1{
-        padding-right: 200px;
-    }
+}
+#ham1, #ham2 {
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    border-radius: 10px;
+}
+#ham1:hover, #ham2:hover {
+    box-shadow: 10px 10px 12px #03045e;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+.def1, .def2 {
+    text-align: center;
+}
     /*fin index*/
 
 
