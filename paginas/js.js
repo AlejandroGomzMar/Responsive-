@@ -60,3 +60,31 @@
         document.addEventListener('DOMContentLoaded', function () {
             agrandarYCambiarColor();
         });
+        
+           // Cambiar color y tamaño del título al cargar la página
+           document.addEventListener("DOMContentLoaded", function() {
+            var titulo = document.getElementById("pelicula");
+            titulo.style.color = "#bf9b46";
+            titulo.style.fontSize = "65px"; // Puedes ajustar el tamaño según sea necesario
+        });
+
+        // Función cambiar color al pasar el mouse sobre los enlaces del menú
+        function agrandarYCambiarColor() {
+            // Obtener todos los enlaces dentro de la lista de etiquetas
+            var enlaces = document.querySelectorAll('.etiquetas .niveles a');
+
+            // Agregar eventos a los enlaces
+            enlaces.forEach(function (enlace) {
+                enlace.addEventListener('mouseover', function () {
+                    this.style.color = '#FF5733'; // Cambiar color
+                });
+
+                enlace.addEventListener('mouseout', function () {
+                    this.style.color = '#45b40d'; // Restaurar color original
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            agrandarYCambiarColor();
+        });
